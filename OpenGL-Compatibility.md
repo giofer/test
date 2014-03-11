@@ -6,7 +6,22 @@ All OpenGL Core Functionality is fully implemented up to and including: **OpenGL
 
 OpenGL Functions from 1.2 to 1.5 (inclusive) which have been deprecated in the standard are available to use, but marked as Obsolete - meaning that their usage will generate warnings.
 
-## Extensions
+## Supported Extensions
 
-TODO: copy over from https://sharpgl.codeplex.com/wikipage?title=OpenGL%20Extensions%20Compatibility&
+### OpenGL 1.1
 
+* Vertex Arrays
+   - EXT_vertex_array
+* Polygon Offsets (Depth Biasing)
+   - EXT_polygon_offset
+* RGBA logical blending
+   - EXT_blend_logic_op
+* Texture Copy and Sub-copy
+   - EXT_subtexture
+   - EXT_copy_texture
+* Texture Formats
+   - EXT_texture
+* Texture Objects
+   - EXT_texture_object
+
+TODO: copy over from https://sharpgl.codeplex.com/wikipage?title=OpenGL%20Extensions%20Compatibility
