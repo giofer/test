@@ -65,7 +65,7 @@ The number of parameters IS included at the end of the function name, just as it
 
 There are two different ways that OpenGL functions can be called.
 
-1. Direct OpenGL Calls
+**Direct OpenGL Calls**
 
 You an use the OpenGL object directly to make OpenGL calls. Every function in OpenGL and all extension functions are included in the OpenGL object. All constants are also defined. In this case, a section of code as below:
 
@@ -86,7 +86,7 @@ gl.PolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL);
 
 This is the most straightforward way to make OpenGL calls, and makes porting existing OpenGL code very simple.
 
-2. Direct OpenGL calls with Wrapped Enumerations
+**Direct OpenGL calls with Wrapped Enumerations**
 
 Almost all OpenGL functions that take some kind of uint, such as glPolygonMode have overloads that provide enumerations as parameters. For example, the call below:
 
