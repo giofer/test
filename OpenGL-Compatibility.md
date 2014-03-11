@@ -2,21 +2,9 @@ SharpGL supports almost all extensions and the core functionality of OpenGL to v
 
 ## Core Functionality
 
-OpenGL 1.0 - Fully Implemented
-OpenGL 1.1 - Fully Implemented
-OpenGL 1.2 - Fully Implemented. Deprecated functions are marked as Obsolete but can be invoked
-OpenGL 1.3 - Fully Implemented. Deprecated functions are marked as Obsolete but can be invoked
-OpenGL 1.4 - Fully Implemented. Deprecated functions are marked as Obsolete but can be invoked
-OpenGL 1.5 - Fully Implemented. Deprecated functions are marked as Obsolete but can be invoked
-OpenGL 2.0 - Fully Implemented
-OpenGL 2.1 - Fully Implemented
-OpenGL 3.0 - Fully Implemented
-OpenGL 3.1 - Fully Implemented
-OpenGL 3.2 - Fully Implemented
-OpenGL 3.3 - Fully Implemented
-OpenGL 4.0 - Fully Implemented
-OpenGL 4.1 - Fully Implemented
-OpenGL 4.2 - Fully Implemented
+All OpenGL Core Functionality is fully implemented up to and including: **OpenGL 4.2**
+
+OpenGL Functions from 1.2 to 1.5 (inclusive) which have been deprecated in the standard are available to use, but marked as Obsolete - meaning that their usage will generate warnings.
 
 ## Extensions
 
