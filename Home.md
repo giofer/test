@@ -1,14 +1,14 @@
 All SharpGL documentation is indexed below.
 
-## Getting Started ##
+### Getting Started ###
 
 1. [Fundamentals](https://github.com/dwmkerr/sharpgl/wiki/Fundamentals)
 
-## Compatiblity ##
+### Compatiblity ###
 
 1. [OpenGL Feature & Extension Compatibility](https://github.com/dwmkerr/sharpgl/wiki/OpenGL-Compatibility)
 
-## Useful Resources ##
+### Useful Resources ###
 
 1. [Samples](https://github.com/dwmkerr/sharpgl/wiki/Samples)
 2. [Tools](https://github.com/dwmkerr/sharpgl/wiki/Tools)
