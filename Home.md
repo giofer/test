@@ -8,6 +8,10 @@ All SharpGL documentation is indexed below.
 
 1. [OpenGL Feature & Extension Compatibility](https://github.com/dwmkerr/sharpgl/wiki/OpenGL-Compatibility)
 
+### Contributing ###
+
+1. [Developing SharpGL](https://github.com/dwmkerr/sharpgl/wiki/Developing-SharpGL)
+
 ### Useful Resources ###
 
 1. [Samples](https://github.com/dwmkerr/sharpgl/wiki/Samples)
