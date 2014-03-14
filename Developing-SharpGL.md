@@ -14,3 +14,7 @@ The main SharpGL library code is in the SharpGL solution - this contains the cor
 The Samples solution contains each of the samples for WPF and WinForms. The Tools solution contains some basic utilities and tools for working with SharpGL. SharpGL, Samples and Tools can be loaded and executed without any additional components.
 
 The Extensions solution is used to build the Visual Studio Extensions (i.e. the project templates). This solution requires the Visual Studio SDK to be installed for the solution to open properly. You can get it here: [Visual Studio Software Development Kit](http://msdn.microsoft.com/en-us/library/bb166441.aspx).
+
+### Building a Release ###
+
+To build a release, please follow the guide at [Creating a Release](https://github.com/dwmkerr/sharpgl/wiki/Creating-a-Release).
