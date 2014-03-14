@@ -15,6 +15,12 @@ The Samples solution contains each of the samples for WPF and WinForms. The Tool
 
 The Extensions solution is used to build the Visual Studio Extensions (i.e. the project templates). This solution requires the Visual Studio SDK to be installed for the solution to open properly. You can get it here: [Visual Studio Software Development Kit](http://msdn.microsoft.com/en-us/library/bb166441.aspx).
 
+### Pre-requisites ###
+
+To build and develop the Visual Studio Extensions, you'll need the following components:
+
+1. [Visual Studio 2010 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=2680)
+
 ### Building a Release ###
 
 To build a release, please follow the guide at [Creating a Release](https://github.com/dwmkerr/sharpgl/wiki/Creating-a-Release).
