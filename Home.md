@@ -11,6 +11,7 @@ All SharpGL documentation is indexed below.
 ### Contributing ###
 
 1. [Developing SharpGL](https://github.com/dwmkerr/sharpgl/wiki/Developing-SharpGL)
+2. [Creating a Release](https://github.com/dwmkerr/sharpgl/wiki/Creating-a-Release)
 
 ### Useful Resources ###
 
