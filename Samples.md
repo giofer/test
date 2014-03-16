@@ -4,7 +4,7 @@ SharpGL comes packaged with many sample applications to demonstrate key features
 
 ### Modern OpenGL Sample ###
 
-This sample shows how to use modern OpenGL features and reserved mode rendering.
+This sample shows how to use modern OpenGL features and reserved mode rendering. This sample is based on the [OpenGL 4.x tutorials](http://www.swiftless.com/opengl4tuts.html) on [Swiftless](http://www.swiftless.com/opengl4tuts.html).
 
 ![Thumbnail](https://github.com/dwmkerr/sharpgl/blob/master/assets/samples/ModernOpenGLSampleSmall.png?raw=true)
 
