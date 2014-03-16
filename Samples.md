@@ -15,8 +15,6 @@ This sample shows how to use:
 3. Vertex Buffer Arrays
 4. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
 
-[Read More]()
-
 ### Simple Drawing Sample
 
 This basic sample shows how we can quickly create an application that uses SharpGL to render some geometry.
