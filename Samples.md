@@ -1,8 +1,8 @@
 SharpGL comes packaged with many sample applications to demonstrate key features or for you to use as starting points for your own development. This page is an index of the Sample Applications. Select any Sample Application to find out what it does, how it does it, and what it teaches you about SharpGL.
 
-## WinForms Samples
+Please be aware that even though each sample is written either for WinForms or WPF, the techniques applied are perfectly valid for either.
 
-### Modern OpenGL Sample ###
+### Modern OpenGL Sample (WinForms) ###
 
 This sample shows how to use modern OpenGL features and reserved mode rendering. This sample is based on the [OpenGL 4.x tutorials](http://www.swiftless.com/opengl4tuts.html) on [Swiftless](http://www.swiftless.com/opengl4tuts.html).
 
@@ -14,6 +14,10 @@ This sample shows how to use:
 2. Vertex Buffers
 3. Vertex Buffer Arrays
 4. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
+
+
+## WinForms Samples
+
 
 ### Simple Drawing Sample
 
