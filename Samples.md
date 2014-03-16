@@ -2,7 +2,20 @@ SharpGL comes packaged with many sample applications to demonstrate key features
 
 ## WinForms Samples
 
-The WinForms samples use the SharpGL, SharpGL.SceneGraph and SharpGL.WinForms assemblies to demonstrate various features. They all use either the OpenGLControl or SceneControl.
+### Modern OpenGL Sample ###
+
+This sample shows how to use modern OpenGL features and reserved mode rendering.
+
+![Thumbnail](https://github.com/dwmkerr/sharpgl/blob/master/assets/samples/ModernOpenGLSampleSmall.png?raw=true)
+
+This sample shows how to use:
+
+1. Simple pixel and fragment shaders.
+2. Vertex Buffers
+3. Vertex Buffer Arrays
+4. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
+
+[Read More]()
 
 ### Simple Drawing Sample
 
