@@ -12,9 +12,22 @@ This sample shows how to use:
 
 1. Simple pixel and fragment shaders.
 2. Vertex Buffers
-3. Vertex Buffer Arrays
-4. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
+3. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
 
+### Cel Shading Sample (WinForms) ###
+
+This sample shows how to use modern OpenGL features and reserved mode rendering to draw a [Trefoil Knot](http://en.wikipedia.org/wiki/Trefoil_knot), either with simple per-pixel lighting or a [Cel Shading](http://en.wikipedia.org/wiki/Cel_shading) effect. The sample is based on the excellent article [Antialiased Cel Shading](http://prideout.net/blog/?p=22) from [The Little Grasshopper](http://prideout.net/blog/).
+
+![Thumbnail](https://github.com/dwmkerr/sharpgl/blob/master/assets/samples/CelShadingSampleNormalSmall.png?raw=true)
+
+This sample shows how to use:
+
+1. Simple pixel and fragment shaders.
+2. Cel shading
+3. Anti-aliasing
+4. Vertex Buffers
+5. Vertex Buffer Arrays
+6. Custom matrices using [GlmNet](https://github.com/dwmkerr/glmnet). 
 
 ## WinForms Samples
 
