@@ -7,6 +7,7 @@ All SharpGL documentation is indexed below.
 ### Compatiblity ###
 
 1. [OpenGL Feature & Extension Compatibility](https://github.com/dwmkerr/sharpgl/wiki/OpenGL-Compatibility)
+2. [Specifying OpenGL Version](https://github.com/dwmkerr/sharpgl/wiki/Specifying-OpenGL-Version)
 
 ### Contributing ###
 
