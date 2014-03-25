@@ -20,6 +20,8 @@ The Extensions solution is used to build the Visual Studio Extensions (i.e. the 
 To build and develop the Visual Studio Extensions, you'll need the following components:
 
 1. [Visual Studio 2010 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=2680)
+   Only needed if working on legacy (pre 2.3) code.
+2. [Visual Studio 2012 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=30668)
 
 ### Building a Release ###
 
