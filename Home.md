@@ -22,4 +22,4 @@ All SharpGL documentation is indexed below.
 
 ### Lessons Learned ###
 
-1. [Performance]
+1. [Performance](https://github.com/dwmkerr/sharpgl/wiki/Lessons-Learned:-Performance)
