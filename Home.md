@@ -19,3 +19,7 @@ All SharpGL documentation is indexed below.
 1. [Samples](https://github.com/dwmkerr/sharpgl/wiki/Samples)
 2. [Tools](https://github.com/dwmkerr/sharpgl/wiki/Tools)
 3. [Visual Studio Extensions](https://github.com/dwmkerr/sharpgl/wiki/Visual-Studio-Extensions)
+
+### Lessons Learned ###
+
+1. [Performance]
