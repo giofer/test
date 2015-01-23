@@ -24,5 +24,5 @@ All SharpGL documentation is indexed below.
 
 #### Performance ####
 
-1. [Invocation of OpenGL extension functions - Invocation of Delegates]
-1. [Performance](https://github.com/dwmkerr/sharpgl/wiki/Lessons-Learned:-Performance)
+1. [Invocation of OpenGL extension functions - Invocation of Delegates](https://github.com/dwmkerr/sharpgl/wiki/Performance-considerations-when-calling-OpenGL-Extension-Functions)
+
