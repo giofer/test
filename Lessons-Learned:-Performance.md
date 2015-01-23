@@ -5,15 +5,17 @@ _Thanks to @ftlPhysicsGuy for giving the feedback on this topic in issue #41!_
 In version 2.4 we changed the way how SharpGL calls OpenGL extension functions.
 
 **The old way**
+
 The wglGetProcAddress function (https://msdn.microsoft.com/en-us/library/windows/desktop/dd374386(v=vs.85).aspx) was used to find a particular OpenGL extension function. The next step was to create a delegate to call the extension function by using Marshal.GetDelegateForFunctionPointer (https://msdn.microsoft.com/de-de/library/system.runtime.interopservices.marshal.getdelegateforfunctionpointer(v=vs.110).aspx). This method converts an unmanaged function pointer to a delegate. The method Delegate.DynamicInvoke (https://msdn.microsoft.com/de-de/library/system.delegate.dynamicinvoke(v=vs.110).aspx) was used to call the OpenGL extension function finally. 
 
 **The Problem**
+
 The problem comes with the Delegate.DynamicInvoke method. This method calls the function dynamically, that means late-bound and involves reflection. This leads to an overhead that decreases performance.
 
 **The new way**
+
 Instead of using the Delegate.DynamicInvoke, we simply create the delegate for the OpenGL extension function and invoke the delegate statically. Here is the code to create the delegate:
 
-`
 private T GetDelegateFor<T>() where T : class
 {
     //  Get the type of the extension function.
@@ -39,18 +41,16 @@ private T GetDelegateFor<T>() where T : class
 
     return del as T;
 }
-`
 
 And so SharpGL invokes the delegate now:
 
-`
 // NOTE: JUST ONE EXAMPLE. MANY METHODS IN OpenGLExtensions.cs USE THIS PATTERN
 public void BlendColor(float red, float green, float blue, float alpha)
 {   
     //InvokeExtensionFunction<glBlendColor>(red, green, blue, alpha);
     GetDelegateFor<glBlendColor>()(red, green, blue, alpha);
 }
-`
 
 **Results**
+
 By changing the function invocation process, we were able to increase the performance by 30%.
