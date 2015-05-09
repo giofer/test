@@ -11,40 +11,44 @@ The problem comes with the Delegate.DynamicInvoke method. This method calls the 
 #### The new way
 Instead of using the Delegate.DynamicInvoke, we simply create the delegate for the OpenGL extension function and invoke the delegate statically. Here is the code to create the delegate:
 
-    private T GetDelegateFor<T>() where T : class
-    {
-        //  Get the type of the extension function.
-        Type delegateType = typeof(T);
+```csharp
+private T GetDelegateFor<T>() where T : class
+{
+	//  Get the type of the extension function.
+	Type delegateType = typeof(T);
 
-        //  Get the name of the extension function.
-        string name = delegateType.Name;
+	//  Get the name of the extension function.
+	string name = delegateType.Name;
 
-        // ftlPhysicsGuy - Better way
-        Delegate del = null;
-        if (extensionFunctions.TryGetValue(name, out del) == false)
-        {
-            IntPtr proc = Win32.wglGetProcAddress(name);
-            if (proc == IntPtr.Zero)
-                throw new Exception("Extension function " + name + " not supported");
+	// ftlPhysicsGuy - Better way
+	Delegate del = null;
+	if (extensionFunctions.TryGetValue(name, out del) == false)
+	{
+		IntPtr proc = Win32.wglGetProcAddress(name);
+		if (proc == IntPtr.Zero)
+			throw new Exception("Extension function " + name + " not supported");
 
-            //  Get the delegate for the function pointer.
-            del = Marshal.GetDelegateForFunctionPointer(proc, delegateType);
+		//  Get the delegate for the function pointer.
+		del = Marshal.GetDelegateForFunctionPointer(proc, delegateType);
 
-            //  Add to the dictionary.
-            extensionFunctions.Add(name, del);
-        }
+		//  Add to the dictionary.
+		extensionFunctions.Add(name, del);
+	}
 
-        return del as T;
-    }
+	return del as T;
+}
+```
 
 And so SharpGL invokes the delegate now:
 
-    // NOTE: JUST ONE EXAMPLE. MANY METHODS IN OpenGLExtensions.cs USE THIS PATTERN
-    public void BlendColor(float red, float green, float blue, float alpha)
-    {   
-        //InvokeExtensionFunction<glBlendColor>(red, green, blue, alpha);
-        GetDelegateFor<glBlendColor>()(red, green, blue, alpha);
-    }
+```csharp
+// NOTE: JUST ONE EXAMPLE. MANY METHODS IN OpenGLExtensions.cs USE THIS PATTERN
+public void BlendColor(float red, float green, float blue, float alpha)
+{
+	//InvokeExtensionFunction<glBlendColor>(red, green, blue, alpha);
+	GetDelegateFor<glBlendColor>()(red, green, blue, alpha);
+}
+```
 
 #### Results
 
