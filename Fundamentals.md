@@ -59,7 +59,7 @@ gl.Vertex3(2.0f, 3.0f 4.0f);
 gl.Vertex4(2.0f, 1.0f, 10.0f, 1.0f);
 ````
 
-The number of parameters IS included at the end of the function name, just as it is in standard OpenGL calls. This is because in some cases, we still we need to know this - for example when calling glVertex3fv or glVertex4fv we need to know how many items in an array we are passing. Because of this, to maintain consistency if the OpenGL function has a number at the end of it, so does the SharpGL wrapper function.
+The number of parameters IS included at the end of the function name, just as it is in standard OpenGL calls. This is because in some cases, we still need to know this - for example when calling glVertex3fv or glVertex4fv we need to know how many items in an array we are passing. Because of this, to maintain consistency if the OpenGL function has a number at the end of it, so does the SharpGL wrapper function.
 
 ## Calling OpenGL Functions ##
 
